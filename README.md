@@ -1,6 +1,7 @@
 # FXserver netdata plugin
 
 Netdata plugin to pull statistics from a FXserver (FiveM, RedM).
+Inspired by [coraxx/netdata_ts3_plugin](https://github.com/coraxx/netdata_ts3_plugin).
 
 ## Installation ##
 
@@ -11,8 +12,7 @@ on your distribution. Read your given release of netdata for more information.
 
 Restart netdata to activate the plugin after you have made these changes.
 
-To disable the FXserver plugin, edit /etc/netdata/python.d.conf and add fxserver: no.
-```
+To disable the FXserver plugin, edit /etc/netdata/python.d.conf and add `fxserver: no`.
 
 ## Debugging
 switch to netdata user:
@@ -21,7 +21,11 @@ switch to netdata user:
 Run plugin in debug mode:
 `/usr/libexec/netdata/plugins.d/python.d.plugin 1 debug trace fxserver`
 
-## License ##
+## Changelog
+
+- v1.0 : Initial release
+
+## License
 
 This repository is released under the MIT license. For more information please
 refer to [LICENSE](https://github.com/ajanvier/netdata-fxserver/blob/master/LICENSE)
